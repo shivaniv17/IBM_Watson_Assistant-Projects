@@ -1,0 +1,4797 @@
+{
+  "intents": [
+    {
+      "intent": "cause",
+      "examples": [
+        {
+          "text": "accidently pet came in front and front part got damaged."
+        },
+        {
+          "text": "Car damaged due to collision with a tree"
+        },
+        {
+          "text": "it has been damaged due to bump in the pole."
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "confirm",
+      "examples": [
+        {
+          "text": "confirm"
+        },
+        {
+          "text": "it's done"
+        },
+        {
+          "text": "No"
+        },
+        {
+          "text": "No , thankyou"
+        },
+        {
+          "text": "thanks for your Help"
+        },
+        {
+          "text": "yes"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "EndorseReason",
+      "examples": [
+        {
+          "text": "moving to another city"
+        },
+        {
+          "text": "shifting to another city"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "getDetail",
+      "examples": [
+        {
+          "text": "can I get my premiumAmount?"
+        },
+        {
+          "text": "can i get my primaryPhoneNumber?"
+        },
+        {
+          "text": "can I know my policyInceptionDate"
+        },
+        {
+          "text": "Can you please cancel my policy."
+        },
+        {
+          "text": "get email"
+        },
+        {
+          "text": "get firstName"
+        },
+        {
+          "text": "i need copy of my Invoice document."
+        },
+        {
+          "text": "i need copy of my policy document."
+        },
+        {
+          "text": "i want cancellation of my policy."
+        },
+        {
+          "text": "I wanted to know my email"
+        },
+        {
+          "text": "I want my invoice document"
+        },
+        {
+          "text": "i want my policy document"
+        },
+        {
+          "text": "i want to cancel my policy"
+        },
+        {
+          "text": "I want to know my policyExpiryDate"
+        },
+        {
+          "text": "I want to make an amendment to my policy."
+        },
+        {
+          "text": "I want to make an endorement to my policy"
+        },
+        {
+          "text": "I want to see my email id."
+        },
+        {
+          "text": "let me know my policyTerm"
+        },
+        {
+          "text": "please cancel my policy."
+        },
+        {
+          "text": "please can you show me my taxamount?"
+        },
+        {
+          "text": "Please show me my email"
+        },
+        {
+          "text": "wanna know my email id"
+        },
+        {
+          "text": "wanted to know premiumFrequency"
+        },
+        {
+          "text": "want name"
+        },
+        {
+          "text": "want to get email"
+        },
+        {
+          "text": "what is email"
+        },
+        {
+          "text": "What is my firstName?"
+        },
+        {
+          "text": "what is my lastName?"
+        },
+        {
+          "text": "What is my name on the policy?"
+        },
+        {
+          "text": "what lastname"
+        },
+        {
+          "text": "What's my insured sum?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Greetings",
+      "examples": [
+        {
+          "text": "good morning"
+        },
+        {
+          "text": "good morning , I am Peter",
+          "mentions": [
+            {
+              "entity": "custname",
+              "location": [
+                20,
+                25
+              ]
+            }
+          ]
+        },
+        {
+          "text": "hello, I am sachin here",
+          "mentions": [
+            {
+              "entity": "custname",
+              "location": [
+                12,
+                18
+              ]
+            }
+          ]
+        },
+        {
+          "text": "hey"
+        },
+        {
+          "text": "hey, here is ankit",
+          "mentions": [
+            {
+              "entity": "custname",
+              "location": [
+                13,
+                18
+              ]
+            }
+          ]
+        },
+        {
+          "text": "hey, I am Saumya here.",
+          "mentions": [
+            {
+              "entity": "custname",
+              "location": [
+                10,
+                16
+              ]
+            }
+          ]
+        },
+        {
+          "text": "hi"
+        },
+        {
+          "text": "Hi, I am alex",
+          "mentions": [
+            {
+              "entity": "custname",
+              "location": [
+                9,
+                13
+              ]
+            }
+          ]
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "image",
+      "examples": [
+        {
+          "text": "i want to upload image"
+        }
+      ],
+      "description": "image"
+    },
+    {
+      "intent": "Insurance_File_Claim",
+      "examples": [
+        {
+          "text": "Do you have any information regarding filing claims?"
+        },
+        {
+          "text": "File a claim for damages caused by natural calamity"
+        },
+        {
+          "text": "How to file a claim for life insurance?"
+        },
+        {
+          "text": "How to file a claim, wanna know more about it, please tell?"
+        },
+        {
+          "text": "How to make a claim for home insurance?"
+        },
+        {
+          "text": "I have to file a claim under medical tourism insurance policy, how to do?"
+        },
+        {
+          "text": "Is it possible to file a claim using the purchase date?"
+        },
+        {
+          "text": "Is there a section on your website for filing claim?"
+        },
+        {
+          "text": "I want to file a claim for my car which got damaged in an accident"
+        },
+        {
+          "text": "I want to file a claim for property insurance."
+        },
+        {
+          "text": "I wish to file a claim for property and liabilities"
+        },
+        {
+          "text": "Looking for some help with claim filing process."
+        },
+        {
+          "text": "My gold jewellary has been stolen, wanna file a claim."
+        },
+        {
+          "text": "Wanna file a claim for travel insurance"
+        },
+        {
+          "text": "Wanted to know about claim filing"
+        },
+        {
+          "text": "What are the steps to file a claim for a two wheeler?"
+        },
+        {
+          "text": "What a way to seek compensation for my loss?"
+        },
+        {
+          "text": "What is the process to file a claim?"
+        },
+        {
+          "text": "What should be done to file a claim?"
+        },
+        {
+          "text": "Will I be able to file a claim from your portal?"
+        }
+      ],
+      "description": "File a claim."
+    },
+    {
+      "intent": "Insurance_Update_Existing_Claim",
+      "examples": [
+        {
+          "text": "Can existing claim be updated with correct details?"
+        },
+        {
+          "text": "Can I see the revised form?"
+        },
+        {
+          "text": "Correct submitted claim"
+        },
+        {
+          "text": "How can I update my account number on the claim form?"
+        },
+        {
+          "text": "How to update my changed mobile number in claim form?"
+        },
+        {
+          "text": "I have changed my contact no, how to change that in the claim as well"
+        },
+        {
+          "text": "I have not provided alternate address in my claim form. I would like to update my claim."
+        },
+        {
+          "text": "Is there any process to change my address in already existing claim?"
+        },
+        {
+          "text": "My email id is incorrect in the claim form. please tell me how to change it."
+        },
+        {
+          "text": "Revise my claim"
+        },
+        {
+          "text": "Update my claim now"
+        },
+        {
+          "text": "View and revise my claim"
+        },
+        {
+          "text": "Wanna change my personal info in the claim, please help"
+        },
+        {
+          "text": "Wanna know about how can I change my permanent address in the existing claim"
+        },
+        {
+          "text": "Want to add to my claim form"
+        },
+        {
+          "text": "Want to download the modification form"
+        },
+        {
+          "text": "Want to modify the claim filed recently"
+        },
+        {
+          "text": "What is the procedure for making changes to an existing claim?"
+        },
+        {
+          "text": "What is the process of updating details in already existing claim?"
+        },
+        {
+          "text": "What should be done in order to change personal details in the claim process?"
+        }
+      ],
+      "description": "Access an existing claim and update its details."
+    },
+    {
+      "intent": "Insurance_View_Claim_Status",
+      "examples": [
+        {
+          "text": "Can you tell me the progress on my case?"
+        },
+        {
+          "text": "Do my claim proceed further?"
+        },
+        {
+          "text": "Give me info about my current claim."
+        },
+        {
+          "text": "Has a decision been reached?"
+        },
+        {
+          "text": "Help me to know if there is an update for my claim"
+        },
+        {
+          "text": "How to check health insurance claim status online?"
+        },
+        {
+          "text": "I need the money immediately, can they approve it quickly?"
+        },
+        {
+          "text": "Is it possible to know the progress of my insurance claim?"
+        },
+        {
+          "text": "It seems the status is stills at pending"
+        },
+        {
+          "text": "I want new information about my claim"
+        },
+        {
+          "text": "I want to know if my claim has been rejected."
+        },
+        {
+          "text": "The status still in pending for like 3 weeks"
+        },
+        {
+          "text": "What is the date of approval?"
+        },
+        {
+          "text": "What is the progress on my claim?"
+        },
+        {
+          "text": "When do I get my money?"
+        },
+        {
+          "text": "When my claim is gonna be processed?"
+        },
+        {
+          "text": "When was the claim approved?"
+        },
+        {
+          "text": "Where is my money?"
+        },
+        {
+          "text": "Which information do I need to provide to check my claim's status?"
+        },
+        {
+          "text": "Would it be possible to know claim status over a call?"
+        }
+      ],
+      "description": "View the status of an existing claim."
+    },
+    {
+      "intent": "Name",
+      "examples": [
+        {
+          "text": "Alex",
+          "mentions": [
+            {
+              "entity": "custname",
+              "location": [
+                0,
+                4
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Ankit",
+          "mentions": [
+            {
+              "entity": "custname",
+              "location": [
+                0,
+                5
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Kumar",
+          "mentions": [
+            {
+              "entity": "custname",
+              "location": [
+                0,
+                5
+              ]
+            }
+          ]
+        },
+        {
+          "text": "my first name Akshaey",
+          "mentions": [
+            {
+              "entity": "custname",
+              "location": [
+                14,
+                21
+              ]
+            }
+          ]
+        },
+        {
+          "text": "my first name is Modi",
+          "mentions": [
+            {
+              "entity": "custname",
+              "location": [
+                17,
+                21
+              ]
+            }
+          ]
+        },
+        {
+          "text": "my first name is Neerav"
+        },
+        {
+          "text": "my last name is Kumar",
+          "mentions": [
+            {
+              "entity": "custname",
+              "location": [
+                16,
+                21
+              ]
+            }
+          ]
+        },
+        {
+          "text": "my last name is virat.",
+          "mentions": [
+            {
+              "entity": "custname",
+              "location": [
+                16,
+                21
+              ]
+            }
+          ]
+        },
+        {
+          "text": "my last name Queen",
+          "mentions": [
+            {
+              "entity": "custname",
+              "location": [
+                13,
+                18
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Peter",
+          "mentions": [
+            {
+              "entity": "custname",
+              "location": [
+                0,
+                5
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Soniya",
+          "mentions": [
+            {
+              "entity": "custname",
+              "location": [
+                0,
+                6
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Suresh",
+          "mentions": [
+            {
+              "entity": "custname",
+              "location": [
+                0,
+                6
+              ]
+            }
+          ]
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Thankyou",
+      "examples": [
+        {
+          "text": "great ! thanks"
+        },
+        {
+          "text": "it was awsome, thankyou"
+        },
+        {
+          "text": "no thankyou"
+        },
+        {
+          "text": "thanks"
+        },
+        {
+          "text": "thanks for the help"
+        },
+        {
+          "text": "thank you"
+        },
+        {
+          "text": "thankyou"
+        },
+        {
+          "text": "will come back"
+        }
+      ],
+      "description": "thanking message"
+    },
+    {
+      "intent": "updatedetails",
+      "examples": [
+        {
+          "text": "can I change my firstName?"
+        },
+        {
+          "text": "I wanted to update my email id."
+        },
+        {
+          "text": "lastName updation ?"
+        },
+        {
+          "text": "please help me out to change my address."
+        },
+        {
+          "text": "please update my email"
+        },
+        {
+          "text": "update first name"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "custname",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Akshaey",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "alex",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ankit",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Kumar",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Modi",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Neerav",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Peter",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Queen",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "sachin",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Saumya",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Soniya",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Suresh",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "virat",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "getentites",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "customerId",
+          "synonyms": [
+            "customer Id",
+            "id"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "customerName",
+          "synonyms": [
+            "customer name",
+            "name"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "detail",
+          "synonyms": [
+            "contact  details",
+            "contact information",
+            "customer details",
+            "customer information",
+            "detail",
+            "details",
+            "policy detail"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "dob",
+          "synonyms": [
+            "birth date",
+            "date of birth "
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "email",
+          "synonyms": [
+            "e-mail",
+            "email id",
+            "mail id",
+            "registered email",
+            "updated email",
+            "updated email id"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "endorseSOP",
+          "synonyms": [
+            "amendment",
+            "endorse history",
+            "endorsement History",
+            "endosrsment"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "firstName",
+          "synonyms": [
+            "first name",
+            "forename"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "gender",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "InstallmentFrequency_sop",
+          "synonyms": [
+            "Installment Frequency",
+            "premium frequency"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "InsuredSum_sop",
+          "synonyms": [
+            "insured sum ",
+            "sum insured"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "invoicesop",
+          "synonyms": [
+            "document of invoice",
+            "invoice",
+            "invoice doc",
+            "invoice document"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "lastName",
+          "synonyms": [
+            "last name"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "nationality",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "PaymentDue_sop",
+          "synonyms": [
+            "due payment",
+            "payment Due"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "policycancelSOP",
+          "synonyms": [
+            "policies",
+            "policy"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "policydocsop",
+          "synonyms": [
+            "document of policy",
+            "policy doc",
+            "policy document"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "policyExpiryDate",
+          "synonyms": [
+            "date of expiry",
+            "expiry date",
+            "policy expiry date"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "policyInceptionDate",
+          "synonyms": [
+            "date of inception ",
+            "inception date",
+            "policy inception date"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "policyNumber",
+          "synonyms": [
+            "policy number"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "policyStatus",
+          "synonyms": [
+            "policy status"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "policyTerm",
+          "synonyms": [
+            "policy term "
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "PremiumValue_sop",
+          "synonyms": [
+            "premium amount  ",
+            "premium value"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "primaryPhoneNumber",
+          "synonyms": [
+            "number",
+            "phone",
+            "phone number",
+            "primary contact",
+            "primary contact number",
+            "primary number",
+            "primary phone number"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "sumAssured",
+          "synonyms": [
+            "assured sum "
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "TaxAmount_sop",
+          "synonyms": [
+            "amount of Tax",
+            "tax amount"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "totalPremiumPaid",
+          "synonyms": [
+            "premium paid",
+            "total premium paid"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "inputs",
+      "values": [
+        {
+          "type": "patterns",
+          "value": "email",
+          "patterns": [
+            "\\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}\\b"
+          ]
+        },
+        {
+          "type": "patterns",
+          "value": "policynumber",
+          "patterns": [
+            "[A-Za-z]{4}[0-9]{7}",
+            "\\b[A-Za-z]{4}[0-9]{7}\\b"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "intent",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "cancel",
+          "synonyms": [
+            "abandon",
+            "cancelling",
+            "discontinue",
+            "postpone",
+            "reconsider",
+            "renew",
+            "rescind",
+            "shelve",
+            "suspend",
+            "withdraw"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "fetch",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "get",
+          "synonyms": [
+            "Get"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "know",
+          "synonyms": [
+            "Know"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "see",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "show",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "want my",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "what",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "response",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "No",
+          "synonyms": [
+            "N",
+            "nope",
+            "nothing",
+            "not now"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Yes",
+          "synonyms": [
+            "why not",
+            "Y",
+            "yo",
+            "yup"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-date",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-number",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-time",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Uintent",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "change",
+          "synonyms": [
+            "changing"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "update",
+          "synonyms": [
+            "updation"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    },
+    "from-sample": true
+  },
+  "webhooks": [
+    {
+      "url": "https://eu-gb.functions.appdomain.cloud/api/v1/web/ankitk074%40yahoo.com_dev/default/watson-atos-call.json",
+      "name": "main_webhook",
+      "headers": []
+    }
+  ],
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "digress_in": "returns",
+      "dialog_node": "Anything else",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_10_1629372954954",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1629217857029",
+      "context": {
+        "policyno": "@inputs.literal"
+      },
+      "conditions": "@inputs.literal",
+      "event_name": "input",
+      "dialog_node": "handler_10_1629217857036"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_1_1629219999915",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1629219999915",
+      "previous_sibling": "handler_8_1629219999915"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": []
+      },
+      "parent": "slot_5_1630046229798",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1630046229805",
+      "previous_sibling": "handler_8_1630046229805"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1630056229455",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1630056229455",
+      "previous_sibling": "handler_9_1630056229455"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_6_1630660934908",
+      "context": {
+        "intent": "@intent"
+      },
+      "conditions": "@intent",
+      "event_name": "input",
+      "dialog_node": "handler_10_1630660934909"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_6_1630661238464",
+      "context": {
+        "response": "@response:Yes"
+      },
+      "conditions": "@response:Yes",
+      "event_name": "input",
+      "dialog_node": "handler_10_1630661238465"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1630663929530",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1630663929542",
+      "previous_sibling": "handler_4_1630663929542"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_2_1631171099733",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1631171099743",
+      "previous_sibling": "handler_1_1631171099742"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_6_1630661238464",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1630661238465",
+      "previous_sibling": "handler_10_1630661238465"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1631171099733",
+      "context": {
+        "Reason": "#EndorseReason"
+      },
+      "conditions": "#EndorseReason",
+      "event_name": "input",
+      "dialog_node": "handler_1_1631171099742"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_12_1630672538289",
+      "context": {
+        "Entity": "@getentites"
+      },
+      "conditions": "@getentites",
+      "event_name": "input",
+      "dialog_node": "handler_13_1630672538289"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": []
+      },
+      "parent": "slot_12_1630672538289",
+      "event_name": "focus",
+      "dialog_node": "handler_14_1630672538289",
+      "previous_sibling": "handler_13_1630672538289"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_15_1630672538289",
+      "context": {
+        "intent": "@Uintent"
+      },
+      "conditions": "@Uintent",
+      "event_name": "input",
+      "dialog_node": "handler_16_1630672538289"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Please mention what you wanted to do with this Information."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_15_1630672538289",
+      "event_name": "focus",
+      "dialog_node": "handler_17_1630672538289",
+      "previous_sibling": "handler_16_1630672538289"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_18_1630672538289",
+      "context": {
+        "response": "@response"
+      },
+      "conditions": "@response",
+      "event_name": "input",
+      "dialog_node": "handler_19_1630672538289"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": []
+      },
+      "parent": "slot_18_1630672538289",
+      "event_name": "focus",
+      "dialog_node": "handler_20_1630672538289",
+      "previous_sibling": "handler_19_1630672538289"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": []
+      },
+      "parent": "slot_8_1629217857029",
+      "event_name": "focus",
+      "dialog_node": "handler_2_1629217857036",
+      "previous_sibling": "handler_10_1629217857036"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_7_1629991620720",
+      "event_name": "focus",
+      "dialog_node": "handler_2_1629991620732",
+      "previous_sibling": "handler_8_1629991620732"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1630042469522",
+      "context": {
+        "value1": "@custname.literal"
+      },
+      "conditions": "@custname.literal",
+      "event_name": "input",
+      "dialog_node": "handler_2_1630042469533"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_6_1630514309416",
+      "event_name": "focus",
+      "dialog_node": "handler_2_1630514309458",
+      "previous_sibling": "handler_7_1630514309458"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_23_1630672550884",
+      "context": {
+        "Entity": "@getentites"
+      },
+      "conditions": "@getentites",
+      "event_name": "input",
+      "dialog_node": "handler_24_1630672550884"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_23_1630672550884",
+      "event_name": "focus",
+      "dialog_node": "handler_25_1630672550884",
+      "previous_sibling": "handler_24_1630672550884"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_26_1630672550884",
+      "context": {
+        "intent": "@Uintent"
+      },
+      "conditions": "@Uintent",
+      "event_name": "input",
+      "dialog_node": "handler_27_1630672550884"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Please mention what you wanted to do with this detail."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_26_1630672550884",
+      "event_name": "focus",
+      "dialog_node": "handler_28_1630672550884",
+      "previous_sibling": "handler_27_1630672550884"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_29_1630672550884",
+      "context": {
+        "response": "@response:Yes"
+      },
+      "conditions": "@response:Yes",
+      "event_name": "input",
+      "dialog_node": "handler_30_1630672550884"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_29_1630672550884",
+      "event_name": "focus",
+      "dialog_node": "handler_31_1630672550884",
+      "previous_sibling": "handler_30_1630672550884"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1629217927288",
+      "context": {
+        "policyno": "@inputs.literal"
+      },
+      "conditions": "@inputs.literal",
+      "event_name": "input",
+      "dialog_node": "handler_3_1629217927288"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1629438934882",
+      "context": {
+        "value": "@inputs.literal"
+      },
+      "conditions": "@inputs.literal",
+      "event_name": "input",
+      "dialog_node": "handler_3_1629438934882"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1630056012169",
+      "context": {
+        "value": "@custname.literal"
+      },
+      "conditions": "@custname.literal",
+      "event_name": "input",
+      "dialog_node": "handler_3_1630056012169"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1630671959667",
+      "context": {
+        "policyno": "@inputs.literal"
+      },
+      "conditions": "@inputs.literal",
+      "event_name": "input",
+      "dialog_node": "handler_3_1630671959667"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1631170379427",
+      "context": {
+        "policyno": "@inputs.literal"
+      },
+      "conditions": "@inputs.literal",
+      "event_name": "input",
+      "dialog_node": "handler_3_1631170379427"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_34_1630672562875",
+      "context": {
+        "Entity": "@getentites"
+      },
+      "conditions": "@getentites",
+      "event_name": "input",
+      "dialog_node": "handler_35_1630672562875"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_34_1630672562875",
+      "event_name": "focus",
+      "dialog_node": "handler_36_1630672562875",
+      "previous_sibling": "handler_35_1630672562875"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_37_1630672562875",
+      "context": {
+        "intent": "@Uintent"
+      },
+      "conditions": "@Uintent",
+      "event_name": "input",
+      "dialog_node": "handler_38_1630672562875"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Please mention what you wanted to do with this detail."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_37_1630672562875",
+      "event_name": "focus",
+      "dialog_node": "handler_39_1630672562875",
+      "previous_sibling": "handler_38_1630672562875"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_40_1630672562875",
+      "context": {
+        "response": "@response:Yes"
+      },
+      "conditions": "@response:Yes",
+      "event_name": "input",
+      "dialog_node": "handler_41_1630672562875"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Please enter Correct Policy Number."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_2_1629217927288",
+      "event_name": "focus",
+      "dialog_node": "handler_4_1629217927288",
+      "previous_sibling": "handler_3_1629217927288"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1629438934882",
+      "event_name": "focus",
+      "dialog_node": "handler_4_1629438934882",
+      "previous_sibling": "handler_3_1629438934882"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1630056012169",
+      "event_name": "focus",
+      "dialog_node": "handler_4_1630056012169",
+      "previous_sibling": "handler_3_1630056012169"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1630660879323",
+      "event_name": "focus",
+      "dialog_node": "handler_4_1630660879347",
+      "previous_sibling": "handler_7_1630660879347"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1630663929530",
+      "context": {
+        "policyno": "@inputs.literal"
+      },
+      "conditions": "@inputs.literal",
+      "event_name": "input",
+      "dialog_node": "handler_4_1630663929542"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1630671959667",
+      "event_name": "focus",
+      "dialog_node": "handler_4_1630671959667",
+      "previous_sibling": "handler_3_1630671959667"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1631170379427",
+      "event_name": "focus",
+      "dialog_node": "handler_4_1631170379427",
+      "previous_sibling": "handler_3_1631170379427"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1631606321440",
+      "context": {
+        "Reason": "#EndorseReason"
+      },
+      "conditions": "#EndorseReason",
+      "event_name": "input",
+      "dialog_node": "handler_4_1631606321440"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_40_1630672562875",
+      "event_name": "focus",
+      "dialog_node": "handler_42_1630672562875",
+      "previous_sibling": "handler_41_1630672562875"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_45_1630672570597",
+      "context": {
+        "Entity": "@getentites"
+      },
+      "conditions": "@getentites",
+      "event_name": "input",
+      "dialog_node": "handler_46_1630672570597"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_45_1630672570597",
+      "event_name": "focus",
+      "dialog_node": "handler_47_1630672570597",
+      "previous_sibling": "handler_46_1630672570597"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_48_1630672570597",
+      "context": {
+        "intent": "@Uintent"
+      },
+      "conditions": "@Uintent",
+      "event_name": "input",
+      "dialog_node": "handler_49_1630672570597"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Please mention what you wanted to do with this detail."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_48_1630672570597",
+      "event_name": "focus",
+      "dialog_node": "handler_50_1630672570597",
+      "previous_sibling": "handler_49_1630672570597"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_7_1629219651230",
+      "context": {
+        "Entity": "@getentites"
+      },
+      "conditions": "@getentites",
+      "event_name": "input",
+      "dialog_node": "handler_5_1629219651238"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_3_1631606321440",
+      "event_name": "focus",
+      "dialog_node": "handler_5_1631606321440",
+      "previous_sibling": "handler_4_1631606321440"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_51_1630672570597",
+      "context": {
+        "response": "@response:Yes"
+      },
+      "conditions": "@response:Yes",
+      "event_name": "input",
+      "dialog_node": "handler_52_1630672570597"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_51_1630672570597",
+      "event_name": "focus",
+      "dialog_node": "handler_53_1630672570597",
+      "previous_sibling": "handler_52_1630672570597"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_1_1629217927287",
+      "event_name": "focus",
+      "dialog_node": "handler_6_1629223475674",
+      "previous_sibling": "node_4_1630321433096"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": []
+      },
+      "parent": "slot_1_1629274880122",
+      "event_name": "focus",
+      "dialog_node": "handler_6_1629274880142",
+      "previous_sibling": "handler_9_1629274880142"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": []
+      },
+      "parent": "slot_1_1630672165314",
+      "event_name": "focus",
+      "dialog_node": "handler_6_1630672165315",
+      "previous_sibling": "handler_7_1630672165315"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": []
+      },
+      "parent": "slot_8_1629371007810",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1629371007810",
+      "previous_sibling": "handler_8_1629371007810"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_2_1630042469522",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1630042469533",
+      "previous_sibling": "handler_2_1630042469533"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_6_1630514309416",
+      "context": {
+        "policyno": "@inputs.literal"
+      },
+      "conditions": "@inputs.literal",
+      "event_name": "input",
+      "dialog_node": "handler_7_1630514309458"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": []
+      },
+      "parent": "slot_5_1630658565343",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1630658565344",
+      "previous_sibling": "handler_9_1630658565344"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1630660879323",
+      "context": {
+        "Entity": "@getentites"
+      },
+      "conditions": "@getentites",
+      "event_name": "input",
+      "dialog_node": "handler_7_1630660879347"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Please mention what you wanted to do with this detail."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_6_1630660934908",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1630660934909",
+      "previous_sibling": "handler_10_1630660934909"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_1_1630672165314",
+      "context": {
+        "policyno": "@inputs.literal"
+      },
+      "conditions": "@inputs.literal",
+      "event_name": "input",
+      "dialog_node": "handler_7_1630672165315"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_6_1631606321440",
+      "context": {
+        "policyno": "@inputs.literal"
+      },
+      "conditions": "@inputs.literal",
+      "event_name": "input",
+      "dialog_node": "handler_7_1631606321440"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "How can I assist you with this policy?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "slot_7_1629219651230",
+      "event_name": "focus",
+      "dialog_node": "handler_8_1629219651238",
+      "previous_sibling": "handler_5_1629219651238"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_1_1629219999915",
+      "context": {
+        "intent": "@intent"
+      },
+      "conditions": "@intent",
+      "event_name": "input",
+      "dialog_node": "handler_8_1629219999915"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1629371007810",
+      "context": {
+        "Entity": "@getentites"
+      },
+      "conditions": "@getentites",
+      "event_name": "input",
+      "dialog_node": "handler_8_1629371007810"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_7_1629991620720",
+      "context": {
+        "custname": "@custname"
+      },
+      "conditions": "@custname",
+      "event_name": "input",
+      "dialog_node": "handler_8_1629991620732"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1630046229798",
+      "context": {
+        "value2": "@custname.literal"
+      },
+      "conditions": "@custname.literal",
+      "event_name": "input",
+      "dialog_node": "handler_8_1630046229805"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_6_1631606321440",
+      "event_name": "focus",
+      "dialog_node": "handler_8_1631606321440",
+      "previous_sibling": "handler_7_1631606321440"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_1_1629274880122",
+      "context": {
+        "intent": "@Uintent"
+      },
+      "conditions": "@Uintent",
+      "event_name": "input",
+      "dialog_node": "handler_9_1629274880142"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Now, please Enter your last name."
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_2_1630042469522",
+      "conditions": "$firstname",
+      "event_name": "filled",
+      "dialog_node": "handler_9_1630042868619",
+      "previous_sibling": "handler_7_1630042469533"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1630056229455",
+      "context": {
+        "value": "@custname.literal"
+      },
+      "conditions": "@custname.literal",
+      "event_name": "input",
+      "dialog_node": "handler_9_1630056229455"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1630658565343",
+      "context": {
+        "policyno": "@inputs.literal"
+      },
+      "conditions": "@inputs.literal",
+      "event_name": "input",
+      "dialog_node": "handler_9_1630658565344"
+    },
+    {
+      "type": "standard",
+      "title": "Thankyou ",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thank you !"
+              },
+              {
+                "text": "Please do come again for any question."
+              },
+              {
+                "text": "It's our pleasure to help you ."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Thankyou",
+      "dialog_node": "node_10_1629372954954",
+      "previous_sibling": "node_7_1629994517410"
+    },
+    {
+      "type": "frame",
+      "title": "customer name",
+      "parent": "node_5_1629217768378",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@custname",
+      "dialog_node": "node_10_1630042430016",
+      "previous_sibling": "node_7_1630056229453"
+    },
+    {
+      "type": "frame",
+      "title": "yes & details",
+      "output": {},
+      "parent": "node_1_1629438934881",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@response:Yes && #updatedetails || @Uintent",
+      "dialog_node": "node_11_1630672538288"
+    },
+    {
+      "type": "frame",
+      "title": "catch policy number ",
+      "parent": "node_4_1629216207645",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "entity": "$Entity",
+            "intent": "$intent",
+            "policyno": "$policyno"
+          },
+          "result_variable": "webhook_result_1"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@inputs:policynumber",
+      "dialog_node": "node_1_1629217927287",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_8_1629993313490",
+      "digress_out_slots": "allow_all"
+    },
+    {
+      "type": "frame",
+      "title": "Greetings",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Greetings",
+      "dialog_node": "node_1_1629270824168",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "frame",
+      "title": "email",
+      "output": {},
+      "parent": "node_5_1629217768378",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "value": "$value",
+            "entity": "$Entity",
+            "intent": "$intent",
+            "policyno": "$policyno"
+          },
+          "result_variable": "webhook_result_2"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@inputs:email",
+      "dialog_node": "node_1_1629438934881"
+    },
+    {
+      "type": "standard",
+      "title": "yes & NO-update",
+      "output": {},
+      "parent": "node_2_1629217134058",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@response",
+      "dialog_node": "node_1_1630039959824",
+      "previous_sibling": "slot_1_1630672165314"
+    },
+    {
+      "type": "frame",
+      "title": "firstName",
+      "output": {},
+      "parent": "node_5_1629217768378",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "value": "$value",
+            "entity": "$Entity",
+            "intent": "$intent",
+            "policyno": "$policyno"
+          },
+          "result_variable": "webhook_result_5"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@custname",
+      "dialog_node": "node_1_1630056012168",
+      "previous_sibling": "node_1_1629438934881"
+    },
+    {
+      "type": "standard",
+      "title": "yes ",
+      "output": {},
+      "parent": "node_1_1629438934881",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@response:Yes",
+      "dialog_node": "node_1_1630473433903",
+      "previous_sibling": "node_11_1630672538288"
+    },
+    {
+      "type": "frame",
+      "title": "yes & details",
+      "output": {},
+      "parent": "node_1_1629217927287",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@response:Yes && @getentites || @intent",
+      "dialog_node": "node_1_1630660841780"
+    },
+    {
+      "type": "frame",
+      "title": "Refetch Policy Number ",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "How can I assist you with this policy?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1630039959824",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_4_1629216207645"
+      },
+      "conditions": "@inputs:policynumber",
+      "dialog_node": "node_1_1630671959666"
+    },
+    {
+      "type": "frame",
+      "title": "Endorsement",
+      "output": {
+        "text": {
+          "values": [
+            "Can you please mention your reason?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_4_1629216207645",
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "conditions": "@inputs:policynumber",
+      "dialog_node": "node_1_1631170379426",
+      "previous_sibling": "response_5_1629990672871"
+    },
+    {
+      "type": "frame",
+      "title": "Reason",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Endorsement creation is in process for your policy, thanks."
+              },
+              {
+                "text": "Anything else you wanted to know?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1631170379426",
+      "conditions": "#EndorseReason",
+      "dialog_node": "node_1_1631170857594"
+    },
+    {
+      "type": "frame",
+      "title": "Policy Cancel",
+      "output": {
+        "text": {
+          "values": [
+            "Do you really want to cancel the Policy?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_4_1629216207645",
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "conditions": "@inputs:policynumber",
+      "dialog_node": "node_1_1631606321439",
+      "previous_sibling": "node_1_1631170379426"
+    },
+    {
+      "type": "folder",
+      "title": "update details ",
+      "dialog_node": "node_2_1629215961356",
+      "previous_sibling": "node_6_1629215927151"
+    },
+    {
+      "type": "frame",
+      "title": "Update details",
+      "parent": "node_2_1629215961356",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@Uintent && #updatedetails && @getentites || @response:Yes",
+      "dialog_node": "node_2_1629217134058"
+    },
+    {
+      "type": "standard",
+      "title": "Reason",
+      "parent": "node_1_1631606321439",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@response",
+      "dialog_node": "node_2_1631606321440"
+    },
+    {
+      "type": "frame",
+      "title": "yes & details",
+      "output": {},
+      "parent": "node_1_1630056012168",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@response:Yes && #updatedetails || @Uintent",
+      "dialog_node": "node_22_1630672550882"
+    },
+    {
+      "type": "frame",
+      "title": "yes & details ",
+      "output": {},
+      "parent": "node_7_1630056229453",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@response:Yes && #updatedetails || @Uintent && @getentites",
+      "dialog_node": "node_33_1630672562874"
+    },
+    {
+      "type": "frame",
+      "title": "Get details",
+      "parent": "node_6_1629215927151",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#getDetail && @intent && @getentites || @response:Yes",
+      "dialog_node": "node_4_1629216207645",
+      "digress_out": "allow_all",
+      "digress_out_slots": "allow_returning"
+    },
+    {
+      "type": "standard",
+      "title": "yes",
+      "parent": "node_1_1629217927287",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@response",
+      "dialog_node": "node_4_1630321433096",
+      "previous_sibling": "node_1_1630660841780"
+    },
+    {
+      "type": "frame",
+      "title": "verify customer detail",
+      "parent": "node_9_1630514034484",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "entity": "claim",
+            "intent": "get",
+            "policyno": "$policyno"
+          },
+          "result_variable": "webhook_result_11"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@inputs:policynumber",
+      "dialog_node": "node_4_1630514288671"
+    },
+    {
+      "type": "frame",
+      "title": "yes & details ",
+      "output": {},
+      "parent": "node_7_1630046167290",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@response:Yes && #updatedetails || @Uintent",
+      "dialog_node": "node_44_1630672570596"
+    },
+    {
+      "type": "frame",
+      "title": "catch policy number",
+      "parent": "node_2_1629217134058",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "entity": "$Entity",
+            "intent": "know",
+            "policyno": "$policyno"
+          },
+          "result_variable": "webhook_result_3"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@inputs:policynumber",
+      "dialog_node": "node_5_1629217768378",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_1_1630039959824",
+      "digress_out_slots": "allow_all"
+    },
+    {
+      "type": "standard",
+      "title": "yes ",
+      "output": {},
+      "parent": "node_1_1630056012168",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@response:Yes",
+      "dialog_node": "node_5_1630672377760",
+      "previous_sibling": "node_22_1630672550882"
+    },
+    {
+      "type": "folder",
+      "title": "get details query",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_6_1629215927151",
+      "previous_sibling": "node_1_1629270824168"
+    },
+    {
+      "type": "standard",
+      "title": "confirm ",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thank You!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#confirm",
+      "dialog_node": "node_7_1629994517410",
+      "previous_sibling": "node_9_1630511505719"
+    },
+    {
+      "type": "frame",
+      "title": "Name",
+      "parent": "node_10_1630042430016",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "intent": "name",
+            "value1": "$value1",
+            "value2": "$value2",
+            "entity1": "firstName",
+            "entity2": "lastName",
+            "policyno": "$policyno"
+          },
+          "result_variable": "webhook_result_4"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@custname",
+      "dialog_node": "node_7_1630046167290"
+    },
+    {
+      "type": "frame",
+      "title": "lastName ",
+      "output": {},
+      "parent": "node_5_1629217768378",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "value": "$value",
+            "entity": "$Entity",
+            "intent": "$intent",
+            "policyno": "$policyno"
+          },
+          "result_variable": "webhook_result_7"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@custname",
+      "dialog_node": "node_7_1630056229453",
+      "previous_sibling": "node_1_1630056012168"
+    },
+    {
+      "type": "standard",
+      "title": "yes",
+      "output": {},
+      "parent": "node_7_1630056229453",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@response:Yes",
+      "dialog_node": "node_7_1630672404933",
+      "previous_sibling": "node_33_1630672562874"
+    },
+    {
+      "type": "standard",
+      "title": "yes & NO",
+      "parent": "node_4_1629216207645",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@response || @getentites",
+      "dialog_node": "node_8_1629993313490",
+      "previous_sibling": "node_1_1631606321439"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Please provide incident details:-"
+              },
+              {
+                "text": "Describe the incident"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_4_1630514288671",
+      "conditions": "#confirm",
+      "dialog_node": "node_8_1630517278823"
+    },
+    {
+      "type": "folder",
+      "title": "FNOL",
+      "dialog_node": "node_9_1630511505719",
+      "previous_sibling": "node_2_1629215961356"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Please confirm your Policy Number."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1630511505719",
+      "conditions": "#Insurance_File_Claim",
+      "dialog_node": "node_9_1630514034484"
+    },
+    {
+      "type": "frame",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "How can I assist you with this policy?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1629993313490",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_4_1629216207645"
+      },
+      "conditions": "@inputs:policynumber",
+      "dialog_node": "node_9_1630663902616"
+    },
+    {
+      "type": "standard",
+      "title": "yes",
+      "output": {},
+      "parent": "node_7_1630046167290",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@response:Yes",
+      "dialog_node": "node_9_1630672408997",
+      "previous_sibling": "node_44_1630672570596"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Your registered email id is: \n$webhook_result_1.message.customer.email"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Is there anything else I can help you with?"
+              },
+              {
+                "text": "anything else?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1629217927287",
+      "conditions": "$Entity==\"email\"",
+      "dialog_node": "response_10_1629264187560",
+      "previous_sibling": "response_1_1629987050888"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "ERROR"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_5_1629217768378",
+      "conditions": "anything_else",
+      "dialog_node": "response_10_1629963832434",
+      "previous_sibling": "response_2_1630055736825"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Your policy document has been sent to your registered email id. Please check after some time."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Is there anything else I can help you with?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_1_1629217927287",
+      "conditions": "$Entity==\"policydocsop\"",
+      "dialog_node": "response_10_1630084917052",
+      "previous_sibling": "response_2_1630071290885"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Please verify your contact details:\nCustomer Name: $webhook_result_11.message.customerName\nEmail: $webhook_result_11.message.customer.email\nprimary Phone Number: $webhook_result_11.message.customer.primaryPhoneNumber"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "Confirm",
+                "value": {
+                  "input": {
+                    "text": "confirm"
+                  }
+                }
+              },
+              {
+                "label": "Update",
+                "value": {
+                  "input": {
+                    "text": "update"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_4_1630514288671",
+      "conditions": "$webhook_result_11",
+      "dialog_node": "response_10_1630514308250",
+      "previous_sibling": "slot_6_1630514309416"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Do you want to continue with the same Policy Number?",
+            "options": [
+              {
+                "label": "Yes",
+                "value": {
+                  "input": {
+                    "text": "Yes"
+                  }
+                }
+              },
+              {
+                "label": "No",
+                "value": {
+                  "input": {
+                    "text": "No"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_9_1630672408997",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_1_1630039959824"
+      },
+      "conditions": "@response:Yes",
+      "dialog_node": "response_10_1630672408998"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "$webhook_result_7.message.message"
+              },
+              {
+                "text": "Is there anything else I can help you with?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_7_1630056229453",
+      "conditions": "$webhook_result_7",
+      "dialog_node": "response_11_1630056229455",
+      "previous_sibling": "slot_8_1630056229455"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hi, I am your Insurance Assistant. How can I help you today?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "Welcome",
+      "conditions": "true",
+      "dialog_node": "response_1_1629272412018",
+      "previous_sibling": "response_5_1629272116826"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The First Name Insured on the policy is:\n$webhook_result_1.message.customer.firstName"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Is there anything else I can help you with?"
+              },
+              {
+                "text": "Anything else?"
+              },
+              {
+                "text": "Any more information you wanted from us?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_1_1629217927287",
+      "conditions": "$Entity==\"firstName\"",
+      "dialog_node": "response_1_1629987050888",
+      "previous_sibling": "slot_2_1629217927288"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "This is your Total Premium Paid:\n$webhook_result_1.message.totalPremiumPaid"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Is there anything else I can help you with?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_1_1629217927287",
+      "conditions": "$Entity==\"totalPremiumPaid\"",
+      "dialog_node": "response_1_1629987738790",
+      "previous_sibling": "response_9_1629987736206"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Your Nationality is:\n$webhook_result_1.message.customer.nationality"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Is there anything else I can help you with?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_1_1629217927287",
+      "conditions": "$Entity==\"nationality\"",
+      "dialog_node": "response_1_1629987998924",
+      "previous_sibling": "response_2_1629987997596"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_2_1629217134058",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1629217768378"
+      },
+      "conditions": "$policyno",
+      "dialog_node": "response_1_1630039723041"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "These are your Customer Detail:\nName:  $webhook_result_1.message.customerName\nEmail:  $webhook_result_1.message.customer.email\nPhone Number:  $webhook_result_1.message.customer.primaryPhoneNumber"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Is there anything else I can help you with?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_1_1629217927287",
+      "conditions": "$Entity==\"detail\"",
+      "dialog_node": "response_1_1630490550430",
+      "previous_sibling": "response_3_1630428163921"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thank You!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1630473433903",
+      "conditions": "@response:No",
+      "dialog_node": "response_1_1630684188346",
+      "previous_sibling": "response_2_1630473433905"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "ERROR"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_7_1630056229453",
+      "conditions": "anything_else",
+      "dialog_node": "response_12_1630056229455",
+      "previous_sibling": "response_11_1630056229455"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_11_1630672538288",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_2_1629217134058"
+      },
+      "conditions": "$response || $Entity && $intent",
+      "dialog_node": "response_21_1630672538289",
+      "previous_sibling": "slot_18_1630672538289"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good Evening, I am your Insurance Assistant. How can I help you today?"
+              },
+              {
+                "text": "Good Evening  $custname,\nHow can I help you?"
+              },
+              {
+                "text": "Hey, $custname.\nHow can I help you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1629270824168",
+      "conditions": "now().after('16:59:59')&&now().before('23:59:59')",
+      "dialog_node": "response_2_1629273613218",
+      "previous_sibling": "response_4_1629271088378"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The Last Name Insured on the policy is:\n$webhook_result_1.message.customer.lastName"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          },
+          {
+            "values": [
+              {
+                "text": "Is there anything else I can help you with?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_1_1629217927287",
+      "conditions": "$Entity==\"lastName\"",
+      "dialog_node": "response_2_1629987997596",
+      "previous_sibling": "response_6_1629987993003"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "This is your Gender: \n$webhook_result_1.message.customer.gender"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Is there anything else I can help you with?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_1_1629217927287",
+      "conditions": "$Entity==\"gender\"",
+      "dialog_node": "response_2_1629988060001",
+      "previous_sibling": "response_1_1629987998924"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "How can I assist you with this policy?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1630039959824",
+      "conditions": "@response:Yes",
+      "dialog_node": "response_2_1630039959826",
+      "previous_sibling": "node_1_1630671959666"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Your existing last name is:$webhook_result_3.message.customer.lastName"
+              },
+              {
+                "text": "Please enter your new last name."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_5_1629217768378",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_7_1630056229453"
+      },
+      "conditions": "$Entity==\"lastName\"",
+      "dialog_node": "response_2_1630055736825",
+      "previous_sibling": "response_4_1630055725771"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "This is your Insured Sum :\nLine A Limit:  ₹ $webhook_result_1.message.LineALimit\nLine B Limit:  ₹ $webhook_result_1.message.LineBLimit\nSum Insured Value:  ₹$webhook_result_1.message.SumInsuredValue"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Is there anything else I can help you with?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_1_1629217927287",
+      "conditions": "$Entity==\"InsuredSum_sop\"",
+      "dialog_node": "response_2_1630071290885",
+      "previous_sibling": "response_4_1630069548482"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Do you want to continue with the same Policy Number?",
+            "options": [
+              {
+                "label": "Yes",
+                "value": {
+                  "input": {
+                    "text": "Yes"
+                  }
+                }
+              },
+              {
+                "label": "No",
+                "value": {
+                  "input": {
+                    "text": "No"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_1_1630473433903",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_1_1630039959824"
+      },
+      "conditions": "@response:Yes",
+      "dialog_node": "response_2_1630473433905"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_1_1630660841780",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_4_1629216207645"
+      },
+      "conditions": "$response || $Entity && $intent",
+      "dialog_node": "response_2_1630660841781",
+      "previous_sibling": "slot_6_1630661238464"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "This is your Premium Value:\n$ $webhook_result_1.message.PremiumValue"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Is there anything else I can help you with?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1629217927287",
+      "conditions": "$Entity==\"PremiumValue_sop\"",
+      "dialog_node": "response_3_1629987732265",
+      "previous_sibling": "response_6_1629987730995"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ok, please enter your policy number."
+              },
+              {
+                "text": "Enter your policy number, please!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1630039959824",
+      "conditions": "@response:No",
+      "dialog_node": "response_3_1630039959826",
+      "previous_sibling": "response_2_1630039959826"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Endorsement creation is in process for your policy number, thanks."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Is there anything else I can help you with?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_1_1629217927287",
+      "conditions": "$Entity==\"endorseSOP\"",
+      "dialog_node": "response_3_1630428163921",
+      "previous_sibling": "response_9_1630084920698"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thank You! "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1630321433096",
+      "conditions": "@response:No",
+      "dialog_node": "response_3_1630684098373",
+      "previous_sibling": "response_4_1630321458284"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_22_1630672550882",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_2_1629217134058"
+      },
+      "conditions": "$response || $Entity && $intent",
+      "dialog_node": "response_32_1630672550884",
+      "previous_sibling": "slot_29_1630672550884"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good Morning, I am your Insurance Assistant. How can I help you today?"
+              },
+              {
+                "text": "hey  $custname, \nHow can I help you?"
+              },
+              {
+                "text": "hey, Good Morning $custname.\nHow can I help you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_1_1629270824168",
+      "conditions": "now().before('11:59:59')&&now().after('04:59:59')",
+      "dialog_node": "response_4_1629271043347",
+      "previous_sibling": "slot_7_1629991620720"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good Afternoon, I am your Insurance Assistant. How can I help you today?"
+              },
+              {
+                "text": "Hi  $custname.\nHow can I help you? "
+              },
+              {
+                "text": "Good Afternoon  $custname.\nHow can I help you? "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_1_1629270824168",
+      "conditions": "now().after('11:59:59')&&now().before('16:59:59')",
+      "dialog_node": "response_4_1629271088378",
+      "previous_sibling": "response_4_1629271043347"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Your existing email id:\n$webhook_result_3.message.customer.email"
+              },
+              {
+                "text": "Please enter the new email id."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_5_1629217768378",
+      "conditions": "$Entity == \"email\"",
+      "dialog_node": "response_4_1629963831450",
+      "previous_sibling": "response_5_1630042037048"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "How can I assist you with this policy?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1629993313490",
+      "conditions": "@response:Yes",
+      "dialog_node": "response_4_1629993353496",
+      "previous_sibling": "node_9_1630663902616"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Here is old Last Name:$webhook_result_3.message.customer.lastName"
+              },
+              {
+                "text": "Enter your Last Name you want to update."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_10_1630042430016",
+      "conditions": "$value1",
+      "dialog_node": "response_4_1630042469486",
+      "previous_sibling": "slot_2_1630042469522"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Your existing first name is:\n$webhook_result_3.message.customer.firstName"
+              },
+              {
+                "text": "Please enter the new First Name"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_5_1629217768378",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_1_1630056012168"
+      },
+      "conditions": "$Entity==\"firstName\"",
+      "dialog_node": "response_4_1630055725771",
+      "previous_sibling": "response_4_1629963831450"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "This is your Payment Due :\n$ $webhook_result_1.message.PaymentDue"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Is there anything else I can help you with?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_1_1629217927287",
+      "conditions": "$Entity==\"PaymentDue_sop\"",
+      "dialog_node": "response_4_1630069548482",
+      "previous_sibling": "response_6_1630069390775"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Do you want to continue with the same Policy Number?",
+            "options": [
+              {
+                "label": "Yes",
+                "value": {
+                  "input": {
+                    "text": "yes"
+                  }
+                }
+              },
+              {
+                "label": "No",
+                "value": {
+                  "input": {
+                    "text": "no"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_4_1630321433096",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_8_1629993313490"
+      },
+      "conditions": "@response:Yes",
+      "dialog_node": "response_4_1630321458284"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ok, thank you."
+              },
+              {
+                "text": "Is there anything else I can help you with?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_2_1631606321440",
+      "conditions": "@response:No",
+      "dialog_node": "response_4_1631606530362",
+      "previous_sibling": "response_5_1631606448312"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_33_1630672562874",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_2_1629217134058"
+      },
+      "conditions": "$response || $Entity && $intent",
+      "dialog_node": "response_43_1630672562875",
+      "previous_sibling": "slot_40_1630672562875"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good Evening, I am your Insurance Assistant. How can I help you today?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "Welcome",
+      "conditions": "now().after('16:59:59')&&now().before('23:59:59')",
+      "dialog_node": "response_5_1629272116826",
+      "previous_sibling": "response_9_1629272112785"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "This is your Installment Frequency:\n$webhook_result_1.message.InstallmentFrequency"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Is there anything else I can help you with?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1629217927287",
+      "conditions": "$Entity==\"InstallmentFrequency_sop\"",
+      "dialog_node": "response_5_1629987733560",
+      "previous_sibling": "response_6_1629987734856"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "This is your Sum Assured:\n$webhook_result_1.message.sumAssured"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Is there anything else I can help you with?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_1_1629217927287",
+      "conditions": "$Entity==\"sumAssured\"",
+      "dialog_node": "response_5_1629987737548",
+      "previous_sibling": "response_1_1629987738790"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Here is your DOB:\n$webhook_result_1.message.customer.dob"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Is there anything else I can help you with?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1629217927287",
+      "conditions": "$Entity==\"dob\"",
+      "dialog_node": "response_5_1629988074878",
+      "previous_sibling": "response_2_1629988060001"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "This is your Primary Phone Number:\n$webhook_result_1.message.customer.primaryPhoneNumber"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Is there anything else I can help you with?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_1_1629217927287",
+      "conditions": "$Entity==\"primaryPhoneNumber\"",
+      "dialog_node": "response_5_1629988076269",
+      "previous_sibling": "response_5_1629988074878"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Can you please enter your policy number."
+              },
+              {
+                "text": "Please Enter your policy number."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1629216207645",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_1_1629217927287"
+      },
+      "conditions": "true",
+      "dialog_node": "response_5_1629990672871",
+      "previous_sibling": "response_6_1631170272020"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Here is your old  First Name:\n $webhook_result_3.message.customer.firstName"
+              },
+              {
+                "text": "Please enter your new First name."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_5_1629217768378",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_10_1630042430016"
+      },
+      "conditions": "$Entity==\"customerName\"",
+      "dialog_node": "response_5_1630042037048",
+      "previous_sibling": "slot_8_1629217857029"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The Name Insured on the policy is:\n$webhook_result_1.message.customerName"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          },
+          {
+            "values": [
+              {
+                "text": "Is there anything else I can help you with?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_1_1629217927287",
+      "conditions": "$Entity==\"customerName\"",
+      "dialog_node": "response_5_1630044700540",
+      "previous_sibling": "response_9_1629988122820"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "$webhook_result_5.message.message"
+              },
+              {
+                "text": "Is there anything else I can help you with?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1630056012168",
+      "conditions": "$webhook_result_5",
+      "dialog_node": "response_5_1630056012169",
+      "previous_sibling": "slot_2_1630056012169"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_2_1631606321440",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_1_1629217927287"
+      },
+      "conditions": "@response:Yes",
+      "dialog_node": "response_5_1631606448312"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_44_1630672570596",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_2_1629217134058"
+      },
+      "conditions": "$response || $Entity && $intent",
+      "dialog_node": "response_54_1630672570597",
+      "previous_sibling": "slot_51_1630672570597"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "$webhook_result_2.message.message"
+              },
+              {
+                "text": "Is there anything else I can help you with?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1629438934881",
+      "conditions": "$webhook_result_2",
+      "dialog_node": "response_6_1629438934882",
+      "previous_sibling": "slot_2_1629438934882"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "This is your policy status:\n$webhook_result_1.message.policyStatus"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          },
+          {
+            "values": [
+              {
+                "text": "anything else?"
+              },
+              {
+                "text": "Is there anything else I can help you with?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_1_1629217927287",
+      "conditions": "$Entity==\"policyStatus\"",
+      "dialog_node": "response_6_1629987727446",
+      "previous_sibling": "response_10_1629264187560"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "This is your Policy Expiry Date:\n$webhook_result_1.message.policyExpiryDate"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Is there anything else I can help you with?"
+              },
+              {
+                "text": "Anything else?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_1_1629217927287",
+      "conditions": "$Entity==\"policyExpiryDate\"",
+      "dialog_node": "response_6_1629987730995",
+      "previous_sibling": "response_9_1629987729593"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "This is your Premium Due Date:\n$webhook_result_1.message.premiumDueDate"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "values": [
+              {
+                "text": "Is there anything else I can help you with?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1629217927287",
+      "conditions": "$Entity==\"premiumDueDate\"",
+      "dialog_node": "response_6_1629987734856",
+      "previous_sibling": "response_3_1629987732265"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "This is your Customer Id:\n$webhook_result_1.message.customer.customerId"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "values": [
+              {
+                "text": "Is there anything else I can help you with?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_1_1629217927287",
+      "conditions": "$Entity==\"customerId\"",
+      "dialog_node": "response_6_1629987993003",
+      "previous_sibling": "response_5_1629987737548"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Can you please enter your Policy number."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1629217134058",
+      "conditions": "true",
+      "dialog_node": "response_6_1630039714031",
+      "previous_sibling": "response_1_1630039723041"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            ""
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_1_1630056012168",
+      "conditions": "anything_else",
+      "dialog_node": "response_6_1630056012169",
+      "previous_sibling": "response_5_1630056012169"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Here is your Tax Amount :\n$ $webhook_result_1.message.TaxAmount"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Is there anything else I can help you with?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_1_1629217927287",
+      "conditions": "$Entity==\"TaxAmount_sop\"",
+      "dialog_node": "response_6_1630069390775",
+      "previous_sibling": "response_5_1630044700540"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Do you want to continue with the same Policy Number?",
+            "options": [
+              {
+                "label": "Yes",
+                "value": {
+                  "input": {
+                    "text": "Yes"
+                  }
+                }
+              },
+              {
+                "label": "No",
+                "value": {
+                  "input": {
+                    "text": "No"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_5_1630672377760",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_1_1630039959824"
+      },
+      "conditions": "@response:Yes",
+      "dialog_node": "response_6_1630672377761"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Can you please enter your policy number."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1629216207645",
+      "conditions": "$Entity==\"endorsesop\"",
+      "dialog_node": "response_6_1631170272020",
+      "previous_sibling": "response_8_1630344759782"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "ERROR"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_1_1631170379426",
+      "disabled": true,
+      "conditions": "anything_else",
+      "dialog_node": "response_6_1631170379427",
+      "previous_sibling": "slot_2_1631170379427"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "ERROR"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_1_1629217927287",
+      "conditions": "anything_else",
+      "dialog_node": "response_7_1629264188432",
+      "previous_sibling": "response_8_1631097088865"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            ""
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_1_1629438934881",
+      "conditions": "anything_else",
+      "dialog_node": "response_7_1629438934882",
+      "previous_sibling": "response_6_1629438934882"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ok, please enter your policy number."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1629993313490",
+      "conditions": "@response:No",
+      "dialog_node": "response_7_1629993730179",
+      "previous_sibling": "response_4_1629993353496"
+    },
+    {
+      "type": "response_condition",
+      "parent": "node_4_1630514288671",
+      "conditions": "anything_else",
+      "dialog_node": "response_7_1630514310614",
+      "previous_sibling": "response_10_1630514308250"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_4_1629216207645",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_1_1629217927287"
+      },
+      "conditions": "$policyno && $Entity &&  $intent",
+      "dialog_node": "response_8_1629966427245"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "$webhook_result_4.message.message"
+              },
+              {
+                "text": "Is there anything else I can help you with?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_7_1630046167290",
+      "conditions": "$webhook_result_4",
+      "dialog_node": "response_8_1630046276887",
+      "previous_sibling": "node_9_1630672408997"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "ERROR"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_7_1630046167290",
+      "conditions": "anything_else",
+      "dialog_node": "response_8_1630046279569",
+      "previous_sibling": "response_8_1630046276887"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Can you please enter your policy number."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1629216207645",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_1_1631606321439"
+      },
+      "conditions": "$Entity==\"policycancelSOP\"",
+      "dialog_node": "response_8_1630344759782",
+      "previous_sibling": "response_8_1629966427245"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Do you want to continue with the same Policy Number?",
+            "options": [
+              {
+                "label": "Yes",
+                "value": {
+                  "input": {
+                    "text": "Yes"
+                  }
+                }
+              },
+              {
+                "label": "No",
+                "value": {
+                  "input": {
+                    "text": "No"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_7_1630672404933",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_1_1630039959824"
+      },
+      "conditions": "@response:Yes",
+      "dialog_node": "response_8_1630672404934"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Policy cancellation for you policy number is in process, thanks."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Is there anything else I can help you with?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1629217927287",
+      "conditions": "$Entity==\"policycancelSOP\"",
+      "dialog_node": "response_8_1631097088865",
+      "previous_sibling": "response_1_1630490550430"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good Morning, I am your Insurance Assistant. How can I help you today?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "Welcome",
+      "conditions": "now().before('11:59:59')&&now().after('04:59:59')",
+      "dialog_node": "response_9_1629272094519"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good Afternoon, I am your Insurance Assistant. How can I help you today?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "Welcome",
+      "conditions": "now().after('11:59:59')&&now().before('16:59:59')",
+      "dialog_node": "response_9_1629272112785",
+      "previous_sibling": "response_9_1629272094519"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "This is your Policy Inception Date:\n$webhook_result_1.message.policyInceptionDate"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "values": [
+              {
+                "text": "Is there anything else I can help you with?"
+              },
+              {
+                "text": "anything else?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_1_1629217927287",
+      "conditions": "$Entity==\"policyInceptionDate\"",
+      "dialog_node": "response_9_1629987729593",
+      "previous_sibling": "response_6_1629987727446"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "This is your Policy Term:\n$webhook_result_1.message.policyTerm"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "values": [
+              {
+                "text": "Is there anything else I can help you with?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1629217927287",
+      "conditions": "$Entity==\"policyTerm\"",
+      "dialog_node": "response_9_1629987736206",
+      "previous_sibling": "response_5_1629987733560"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "This is your Branch:\n$webhook_result_1.message.branch"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Is there anything else I can help you with?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_1_1629217927287",
+      "conditions": "$Entity==\"branch\"",
+      "dialog_node": "response_9_1629988122820",
+      "previous_sibling": "response_5_1629988076269"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Your invoice document has been sent to your registered email id. Please check after some time."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Is there anything else I can help you with?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_1_1629217927287",
+      "conditions": "$Entity==\"invoicesop\"",
+      "dialog_node": "response_9_1630084920698",
+      "previous_sibling": "response_10_1630084917052"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "ERROR"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_1_1631606321439",
+      "disabled": true,
+      "conditions": "anything_else",
+      "dialog_node": "response_9_1631606321440",
+      "previous_sibling": "slot_6_1631606321440"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_4_1629216207645",
+      "variable": "$intent",
+      "dialog_node": "slot_1_1629219999915",
+      "previous_sibling": "slot_7_1629219651230"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_2_1629217134058",
+      "variable": "$intent",
+      "dialog_node": "slot_1_1629274880122",
+      "previous_sibling": "response_6_1630039714031"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_2_1629217134058",
+      "variable": "$policyno",
+      "dialog_node": "slot_1_1630672165314",
+      "previous_sibling": "slot_8_1629371007810"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_11_1630672538288",
+      "variable": "$Entity",
+      "dialog_node": "slot_12_1630672538289"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_11_1630672538288",
+      "variable": "$intent",
+      "dialog_node": "slot_15_1630672538289",
+      "previous_sibling": "slot_12_1630672538289"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_11_1630672538288",
+      "variable": "$response",
+      "dialog_node": "slot_18_1630672538289",
+      "previous_sibling": "slot_15_1630672538289"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1629217927287",
+      "variable": "$policyno",
+      "dialog_node": "slot_2_1629217927288",
+      "previous_sibling": "handler_6_1629223475674"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1629438934881",
+      "variable": "$value",
+      "dialog_node": "slot_2_1629438934882",
+      "previous_sibling": "node_1_1630473433903"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_10_1630042430016",
+      "variable": "$value1",
+      "dialog_node": "slot_2_1630042469522",
+      "previous_sibling": "node_7_1630046167290"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1630056012168",
+      "variable": "$value",
+      "dialog_node": "slot_2_1630056012169",
+      "previous_sibling": "node_5_1630672377760"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1630671959666",
+      "variable": "$policyno",
+      "dialog_node": "slot_2_1630671959667"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1631170379426",
+      "variable": "$policyno",
+      "dialog_node": "slot_2_1631170379427",
+      "previous_sibling": "node_1_1631170857594"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1631170857594",
+      "variable": "$Reason",
+      "dialog_node": "slot_2_1631171099733"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_22_1630672550882",
+      "variable": "$Entity",
+      "dialog_node": "slot_23_1630672550884"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_22_1630672550882",
+      "variable": "$intent",
+      "dialog_node": "slot_26_1630672550884",
+      "previous_sibling": "slot_23_1630672550884"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_22_1630672550882",
+      "variable": "$response",
+      "dialog_node": "slot_29_1630672550884",
+      "previous_sibling": "slot_26_1630672550884"
+    },
+    {
+      "type": "slot",
+      "parent": "node_9_1630663902616",
+      "variable": "$policyno",
+      "dialog_node": "slot_3_1630663929530"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_2_1631606321440",
+      "variable": "$Reason",
+      "dialog_node": "slot_3_1631606321440",
+      "previous_sibling": "response_4_1631606530362"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_33_1630672562874",
+      "variable": "$Entity",
+      "dialog_node": "slot_34_1630672562875"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_33_1630672562874",
+      "variable": "$intent",
+      "dialog_node": "slot_37_1630672562875",
+      "previous_sibling": "slot_34_1630672562875"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_33_1630672562874",
+      "variable": "$response",
+      "dialog_node": "slot_40_1630672562875",
+      "previous_sibling": "slot_37_1630672562875"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_44_1630672570596",
+      "variable": "$Entity",
+      "dialog_node": "slot_45_1630672570597"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_44_1630672570596",
+      "variable": "$intent",
+      "dialog_node": "slot_48_1630672570597",
+      "previous_sibling": "slot_45_1630672570597"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_44_1630672570596",
+      "variable": "$response",
+      "dialog_node": "slot_51_1630672570597",
+      "previous_sibling": "slot_48_1630672570597"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_7_1630046167290",
+      "variable": "$value2",
+      "dialog_node": "slot_5_1630046229798",
+      "previous_sibling": "response_8_1630046279569"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_4_1629216207645",
+      "variable": "$policyno",
+      "dialog_node": "slot_5_1630658565343",
+      "previous_sibling": "slot_1_1629219999915"
+    },
+    {
+      "type": "slot",
+      "parent": "node_1_1630660841780",
+      "variable": "$Entity",
+      "dialog_node": "slot_5_1630660879323"
+    },
+    {
+      "type": "slot",
+      "parent": "node_4_1630514288671",
+      "variable": "$policyno",
+      "dialog_node": "slot_6_1630514309416",
+      "previous_sibling": "node_8_1630517278823"
+    },
+    {
+      "type": "slot",
+      "parent": "node_1_1630660841780",
+      "variable": "$intent",
+      "dialog_node": "slot_6_1630660934908",
+      "previous_sibling": "slot_5_1630660879323"
+    },
+    {
+      "type": "slot",
+      "parent": "node_1_1630660841780",
+      "variable": "$response",
+      "dialog_node": "slot_6_1630661238464",
+      "previous_sibling": "slot_6_1630660934908"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1631606321439",
+      "variable": "$policyno",
+      "dialog_node": "slot_6_1631606321440",
+      "previous_sibling": "node_2_1631606321440"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_4_1629216207645",
+      "variable": "$Entity",
+      "dialog_node": "slot_7_1629219651230",
+      "previous_sibling": "node_1_1629217927287"
+    },
+    {
+      "type": "slot",
+      "parent": "node_1_1629270824168",
+      "variable": "$custname",
+      "dialog_node": "slot_7_1629991620720"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_5_1629217768378",
+      "variable": "$policyno",
+      "dialog_node": "slot_8_1629217857029",
+      "previous_sibling": "node_10_1630042430016"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_2_1629217134058",
+      "variable": "$Entity",
+      "dialog_node": "slot_8_1629371007810",
+      "previous_sibling": "slot_1_1629274880122"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_7_1630056229453",
+      "variable": "$value",
+      "dialog_node": "slot_8_1630056229455",
+      "previous_sibling": "node_7_1630672404933"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "intent_classification": {
+      "training_backend_version": "v2"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "Syntbots-Watson -Integration",
+  "language": "en",
+  "description": ""
+}
