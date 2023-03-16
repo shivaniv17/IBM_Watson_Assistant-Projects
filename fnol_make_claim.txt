@@ -1,0 +1,277 @@
+import sys
+import json
+import requests
+from datetime import date
+
+
+
+
+
+headers = {'Content-type': 'application/json', 'charset':'utf-8'}
+def main(dict):
+ intent= dict["intent"]
+ p_no= dict["policyno"]
+ 
+ 
+ 
+ url=switch(intent,p_no)
+ 
+ if(intent=="know" or intent=="show" or intent=="see" or intent=="get" or intent=="what"):
+   url=getdetails(p_no)
+   data=getResponse(url)
+   print("url",data)
+   return {'message': data}
+ 
+ elif(intent=="else"):
+   up_val= dict["value"]
+   up__key=dict["entity"]  
+   up_val1= dict["value1"]
+   up__key1=dict["entity1"]
+   url=updatedetails(p_no)
+   data=putResponse(url, up_val, up__key, up_val1, up__key1, p_no)
+   print("url",data)
+   return {'message': data}
+   
+ elif(intent=="update" or intent=="change"):
+   up_val= dict["value"]
+   up__key=dict["entity"]
+   url=updatedetails(p_no)
+   data=putResponse1(url, up_val, up__key, p_no)
+   print("url",data)
+   return {'message': data}
+
+ elif(intent=='fnol'):
+     date_reported= str( date.today() )
+     address= dict["address"]
+     city= dict["city"]
+     loss_description= dict["loss_description"]
+     date_loss= dict["date_loss"]
+     year= dict["year"]
+     time= dict["time"]
+     model= dict["model"]
+     zipcode= dict["zipcode"]
+     data=postResponse(url,p_no,date_reported,address,city,loss_description,date_loss,year,time,model,zipcode)
+     print("url",data)
+     return {'message': data}
+ 
+ else:
+   data=getResponse(url)
+   return {'message1': data}
+   
+ 
+ 
+ 
+ 
+def switch(intent,p_no):
+  switcher = {
+  'Getdetails':getdetails(p_no), 
+  'Updatedetails':updatedetails(p_no),
+  'yes':getdetails(p_no),
+  'else':updatedetails(p_no),
+  'fnol':attachment()
+  
+  }
+ 
+  return switcher.get(intent,"Oops! Invalid Option")
+ 
+ 
+def getResponse(url):
+  response =  requests.get(url) 
+  datastr= response.text
+  data= json.loads(datastr)
+  return data
+  
+  
+
+def putResponse1(url,val,key,id):
+  url2=getdetails(id)
+  data=getResponse(url2)
+  formatdetails1(data,key,val)
+  test1 = json.dumps(test, indent = 4)
+  response =requests.put(url,test1,headers=headers)
+  print("test",response)
+  datastr= response.content
+  print("test",datastr)
+  r= json.loads(datastr) 
+  return r
+
+def putResponse(url,val,key,val1,key1,id):
+  url2=getdetails(id)
+  data=getResponse(url2)
+  formatdetails(data,key,val,val1,key1)
+  test1 = json.dumps(test, indent = 4)
+  response =requests.put(url,test1,headers=headers)
+  print("test",response)
+  datastr= response.content
+  print("test",datastr)
+  r= json.loads(datastr) 
+  return r 
+  
+def postResponse(url,p_no,date_reported,address,city,loss_description,date_loss,year,time,model,zipcode):
+  formatdetails2(p_no,date_reported,address,city,loss_description,date_loss,year,time,model,zipcode)
+  test3=json.dumps(test2, indent = 4)
+  response =requests.post(url,test3,auth=('sbsuperadmin', 'Med2O!sChnTn'),headers=headers,verify=False)
+  print("test2",response)
+  datastr=response.content
+  print("test2",datastr)
+  r= json.loads(datastr)
+  return r 
+ 
+  
+def getdetails(id):
+  url = ("http://35.206.75.60:9090/api/v1/policy/"+id)
+  #url = ("http://35.208.123.208:9090/api/v1/policy/"+id)
+  return url  
+ 
+
+def updatedetails(id):
+  url = ("http://35.206.75.60:9090/api/v1/policy/async/"+id)
+   #url = ("http://104.197.187.239:9090/api/v1/policy/"+id)
+   #url = ("http://35.208.123.208:9090/api/v1/policy/"+id)
+  return url
+
+def attachment():
+  url = ("https://35.208.123.208:8443/syntbotssm/rest/executeSOPBySOPNameInSync")
+  return url
+
+
+def formatdetails(data,key,val,val1,key1):
+    test["customer"]["firstName"]          =         data["customer"]["firstName"]
+    test["customer"]["lastName"]           =         data["customer"]["lastName"]
+    test["customer"]["saluation"]          =         data["customer"]["saluation"]
+    test["customer"]["nationality"]        =         data["customer"]["nationality"]
+    test["customer"]["gender"]             =         data["customer"]["gender"]
+    test["customer"]["dob"]                =         data["customer"]["dob"]
+    test["customer"]["primaryPhoneNumber"] =         data["customer"]["primaryPhoneNumber"]
+    test["customer"]["email"]              =         data["customer"]["email"]
+    test["policyInceptionDate"]            =         data["policyInceptionDate"]
+    test["policyExpiryDate"]               =         data["policyExpiryDate"]
+    test["quoteNumber"]                    =         data["quoteNumber"]
+    test["premiumAmount"]                  =         data["premiumAmount"]
+    test["premiumFrequency"]               =         data["premiumFrequency"]
+    test["policyTerm"]                     =         data["policyTerm"]
+    test["customer"][key]                  =         val
+    test["customer"][key1]                  =        val1
+    
+def formatdetails1(data,key,val):
+    test["customer"]["firstName"]          =         data["customer"]["firstName"]
+    test["customer"]["lastName"]           =         data["customer"]["lastName"]
+    test["customer"]["saluation"]          =         data["customer"]["saluation"]
+    test["customer"]["nationality"]        =         data["customer"]["nationality"]
+    test["customer"]["gender"]             =         data["customer"]["gender"]
+    test["customer"]["dob"]                =         data["customer"]["dob"]
+    test["customer"]["primaryPhoneNumber"] =         data["customer"]["primaryPhoneNumber"]
+    test["customer"]["email"]              =         data["customer"]["email"]
+    test["policyInceptionDate"]            =         data["policyInceptionDate"]
+    test["policyExpiryDate"]               =         data["policyExpiryDate"]
+    test["quoteNumber"]                    =         data["quoteNumber"]
+    test["premiumAmount"]                  =         data["premiumAmount"]
+    test["premiumFrequency"]               =         data["premiumFrequency"]
+    test["policyTerm"]                     =         data["policyTerm"]
+    test["customer"][key]                  =         val
+     
+
+def formatdetails2(p_no,date_reported,address,city,loss_description,date_loss,year,time,model,zipcode):
+     test2["sopExecJSON"]["execSOPParamsData"]["policynumber"] =p_no
+     test2["sopExecJSON"]["execSOPParamsData"]["DateReported"]=date_reported
+     test2["sopExecJSON"]["execSOPParamsData"]["PolicyinfoAddress"] =address
+     test2["sopExecJSON"]["execSOPParamsData"]["City"]=city
+     test2["sopExecJSON"]["execSOPParamsData"]["LossDescription"]=loss_description
+     test2["sopExecJSON"]["execSOPParamsData"]["DateofLoss"]=date_loss
+     test2["sopExecJSON"]["execSOPParamsData"]["Year"]=year
+     test2["sopExecJSON"]["execSOPParamsData"]["TimeOfLoss"]=time
+     test2["sopExecJSON"]["execSOPParamsData"]["Model"]=model
+     test2["sopExecJSON"]["execSOPParamsData"]["Zipcode"]=zipcode
+
+     
+test= {
+	   "insuranceProduct": "",
+     "customer": {
+     "firstName": None,
+     "lastName": None,
+     "saluation": None,
+     "nationality": None,
+     "gender": None,
+     "dob": None,
+     "primaryPhoneNumber": 3216459870,
+     "secondaryPhoneNumber": 0,
+     "email": "abc@abc.com"
+     },
+	   "agency": {
+	   "agencyId": 0
+	   },
+	   "policyInceptionDate": "2021-05-03",
+	   "policyExpiryDate": "2022-05-03",
+	   "quoteNumber": "Line18Q2021",
+     "premiumAmount": 0,
+	   "premiumFrequency": None, 
+	   "policyTerm": 12
+     }
+
+
+test2={
+
+    "sopExecJSON": {
+
+        "requestHeaderData": {
+
+            "userid": "sbsuperadmin"
+
+        },
+
+        "requestRulesData": {},
+
+        "sopName": "FNOL",
+
+        "execSOPParamsData": {
+
+            
+
+            "msg": "test message",
+
+            "sleep": "120",
+
+            "Policynumber": "Line1000101",
+
+        "botTimeOut": "600",
+
+        "DateReported": "08/04/2021",
+
+        "PolicyinfoAddress": "Inner Circle",
+
+        "City": "Dallas",
+
+        "url": "http://localhost/Suite_AFS.Claims/Desktop/HomePage/Default.aspx?src=%2fSuite_AFS.Claims%2fDesktop%2fHomePage%2fHomePage.aspx&StaticPulseMode=true&IframeMode=true&UserStateId=08D93F869129A7A9",
+
+        "browserType": "Chrome",
+
+        "LossDescription": "Speed",
+
+        "DateofLoss": "08/03/2021",
+
+        "Year": "2018",
+
+        "TimeOfLoss": "3:30 PM",
+
+        "Model": "Audi Q8",
+
+        "Zipcode": "76238"
+
+        }
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+    
